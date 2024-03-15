@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredImmo", "CredImmo\CredImmo.csproj", "{64363BCD-C039-4901-99FD-B3C3F83FA2A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D068909E-11D5-4BCE-A9EC-A6247B7E9D93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{64363BCD-C039-4901-99FD-B3C3F83FA2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64363BCD-C039-4901-99FD-B3C3F83FA2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64363BCD-C039-4901-99FD-B3C3F83FA2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D068909E-11D5-4BCE-A9EC-A6247B7E9D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D068909E-11D5-4BCE-A9EC-A6247B7E9D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D068909E-11D5-4BCE-A9EC-A6247B7E9D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D068909E-11D5-4BCE-A9EC-A6247B7E9D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
