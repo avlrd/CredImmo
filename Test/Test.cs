@@ -17,10 +17,11 @@ public class Test
 	}
 
 	[Theory]
-	[InlineData(49999, 107, 1)]
+	[InlineData(49999, 108, 1)]
+	[InlineData(50000, 107, 1)]
 	[InlineData(50000, 301, 1)]
 	[InlineData(50000, 108, -1)]
-	public void CalculMensualite_(ushort montant, ushort duree, double taux)
+	public void CalculMensualite_InvalidArgs(ushort montant, ushort duree, double taux)
 	{
 		Assert.Throws<ArgumentException>(() => CredImmo.CalculMensualite(montant, duree, taux));
 	}
