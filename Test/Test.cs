@@ -1,8 +1,6 @@
-using CredImmo;
-
 namespace CredImmo.Tests;
 
-public class Test
+public class Test_CalculMensualite
 {
 	[Fact]
 	public void CalculMensualite_CasSimpleValide()
