@@ -1,6 +1,6 @@
 namespace CredImmo;
 
-public abstract class CredImmo
+public interface ICalculateur
 {
 	public static double CalculMensualite(ushort montant, ushort duree, double taux)
 	{
