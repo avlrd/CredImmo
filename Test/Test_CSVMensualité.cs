@@ -9,6 +9,6 @@ public class Test_CSVMensualite
 		CSV output = new CSV();
 		string csvMensualite = output.Mensualite(numero, rembourse, restant);
 
-		Assert.Equal($"", csvMensualite);
+		Assert.Equal($"{numero},{rembourse},{restant}", csvMensualite);
 	}
 }
