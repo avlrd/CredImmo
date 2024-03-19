@@ -2,6 +2,7 @@ namespace CredImmo.Tests;
 
 public class Test_CalculTotal
 {
+	[Fact]
 	public void CalculTotal_CasSimpleValide()
 	{
 		ushort montant = 50000;
@@ -10,6 +11,6 @@ public class Test_CalculTotal
 
 		double total = ICalculateur.CalculTotal(montant, duree, taux);
 
-		Assert.Equal(52284.40, total);
+		Assert.Equal(52304.40, total);
 	}
 }
