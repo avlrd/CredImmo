@@ -1,4 +1,4 @@
-namespace CredImmo.Tests;
+namespace CredImmo.Tests.Calculateur;
 
 public class Test_CalculTotal
 {

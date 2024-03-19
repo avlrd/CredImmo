@@ -1,4 +1,4 @@
-namespace CredImmo.Tests;
+namespace CredImmo.Tests.Output;
 
 public class Test_CSVLabels
 {
