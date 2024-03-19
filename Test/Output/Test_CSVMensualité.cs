@@ -6,8 +6,7 @@ public class Test_CSVMensualite
 	[InlineData(1, 484.3, 51820.1)]
 	public void CSVMensualite_Valeurs(int numero, double rembourse, double restant)
 	{
-		CSV output = new CSV();
-		string csvMensualite = output.Mensualite(numero, rembourse, restant);
+		string csvMensualite = ICSV.Mensualite(numero, rembourse, restant);
 
 		Assert.Equal($"{numero},{rembourse},{restant}", csvMensualite);
 	}

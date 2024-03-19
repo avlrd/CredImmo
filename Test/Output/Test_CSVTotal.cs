@@ -7,8 +7,7 @@ public class Test_CSVTotal
 	[InlineData(152232.22)]
 	public void CSVTotal_Valeurs(double total)
 	{
-		CSV output = new CSV();
-		string csvTotal = output.Total(total);
+		string csvTotal = ICSV.Total(total);
 
 		Assert.Equal($"Coût total : {total}", csvTotal);
 	}
