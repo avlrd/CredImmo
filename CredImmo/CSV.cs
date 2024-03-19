@@ -4,4 +4,9 @@ public class CSV : IOutput
 	{
 		return $"Coût total : {total}";
 	}
+
+	public string Mensualite(int numero, double rembourse, double restant)
+	{
+		return $"{numero},{rembourse},{restant}";
+	}
 }
