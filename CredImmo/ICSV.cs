@@ -9,4 +9,9 @@ public interface ICSV
 	{
 		return $"{numero},{rembourse},{restant}";
 	}
+
+	public static string Labels()
+	{
+		return "Numéro de mensualité,Capital remboursé,Restant dû";
+	}
 }
