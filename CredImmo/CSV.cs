@@ -1,7 +1,7 @@
 public class CSV : IOutput
 {
-	public string Total()
+	public string Total(double total)
 	{
-		return "Coût total : 52304.40";
+		return $"Coût total : {total}";
 	}
 }
