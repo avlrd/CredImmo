@@ -11,11 +11,3 @@ public class Test_CSVTotal
 		Assert.Equal("Coût total : 52304.40", csvTotal);
 	}
 }
-
-public class CSV
-{
-	public string Total()
-	{
-		return "Coût total : 52304.40";
-	}
-}
