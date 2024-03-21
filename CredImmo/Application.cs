@@ -1,4 +1,6 @@
-﻿namespace CredImmo;
+﻿using System.Text;
+
+namespace CredImmo;
 
 public class Application
 {
@@ -15,7 +17,7 @@ public class Application
 		double mensualite = ICalculateur.CalculMensualite(montant, duree, taux);
 		double total = ICalculateur.CalculTotal(montant, duree, taux);
 
-		using StreamWriter stream = new(cheminDestination);
+		using StreamWriter stream = new(cheminDestination, false, Encoding.UTF8);
 
 		stream.WriteLine(ICSV.Total(total));
 		stream.WriteLine(ICSV.Labels());
