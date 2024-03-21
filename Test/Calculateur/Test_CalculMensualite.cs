@@ -14,6 +14,16 @@ public class Test_CalculMensualite
 		Assert.Equal(484.30, mensualité);
 	}
 
+	[Fact]
+	public void CalculMensualite_MaxValues()
+	{
+		uint montant = uint.MaxValue;
+		ushort duree = 300;
+		double taux = 100;
+
+		Assert.True(ICalculateur.CalculMensualite(montant, duree, taux) < double.MaxValue);
+	}
+
 	[Theory]
 	[InlineData(49999, 108, 1)]
 	[InlineData(50000, 107, 1)]
