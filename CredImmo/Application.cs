@@ -2,7 +2,10 @@
 
 public class Application
 {
-	public static void Main()
+	static void Main(string[] args)
 	{
+		if(!IArgsValidation.ValidationArguments(args))
+			return;
+		Console.WriteLine("Hello :)");
 	}
 }
