@@ -2,7 +2,7 @@ namespace CredImmo;
 
 public interface ICalculateur
 {
-	public static double CalculMensualite(ushort montant, ushort duree, double taux)
+	public static double CalculMensualite(uint montant, ushort duree, double taux)
 	{
 		if(montant < 50000)
 			throw new ArgumentException("Montant inférieur à 50 000");
@@ -17,7 +17,7 @@ public interface ICalculateur
 		return mensualite;
 	}
 
-	public static double CalculTotal(ushort montant, ushort duree, double taux)
+	public static double CalculTotal(uint montant, ushort duree, double taux)
 	{
 		double mensualite = CalculMensualite(montant, duree, taux);
 		double total = mensualite * duree;
